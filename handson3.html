@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="product" data-id="1" data-price="28990">
+      <h3>Samsung 108 cm (32 inches) HD Ready Smart LED TV</h3>
+      <p>Price: &#x20B9; 28990</p>
+      <button onclick="addToCart(1)">Add to Cart</button>
+    </div>
+    <div class="product" data-id="2" data-price="99999">
+      <h3>Samsung Galaxy Z Flip5 5G</h3>
+      <p>Price: &#x20B9; 99999</p>
+      <button onclick="addToCart(2)">Add to Cart</button>
+    </div>
+    <div class="product" data-id="3" data-price="54990">
+      <h3>Dell Inspiron 7430 2in1 Touch Laptop, 13th Gen Intel Core</h3>
+      <p>Price: &#x20B9; 54990</p>
+      <button onclick="addToCart(3)">Add to Cart</button>
+    </div>
+
+    <script>
+      function addToCart(productId) {
+        let productDiv = document.querySelector(
+          '.product[data-id="' + productId + '"]'
+        );
+        let productName = productDiv.querySelector("h3").textContent;
+        let productPrice = parseInt(productDiv.getAttribute("data-price"));
+        alert(
+          `Product added to cart:\nName: ${productName} \nPrice: ₹ ${productPrice}`
+        );
+      }
+    </script>
+  </body>
+</html>

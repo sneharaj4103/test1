@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var consonants=()=>  {
+            const inputText = document.getElementById("inputtext").value;
+            const con = /[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/g;
+            const consonantCount = (inputText.match(con) || []).length;
+
+            if (consonantCount === 0) {
+                alert("No Consonants");
+            } else if (consonantCount === 7) {
+                alert("Number of consonants: 7");
+            } else {
+                alert(`Number of consonants: ${consonantCount}`);
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-image:url(bk.jpg);
+            background-size:70%;
+            background-position:center ;
+            font-weight: bold;
+        }
+        h3{
+            color: #FFFFFF ;
+            background-color: #00CCFF;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 50%;
+            border-radius: 6px;
+        }
+        table,tr,td{
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            border:1px,solid ;
+            border-spacing: 1px;
+            border-radius: 6px;
+            color: #009900 ;
+            background-color: #F2F2F2;
+            padding: 1px;
+        }
+        #button{
+           
+            color: #FFFFFF ;
+            background-color: #00CCFF;
+            width: 50%;
+            border-radius: 6px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            margin-left: auto;
+            margin-right: auto;
+            padding:5px;
+            text-align: center;
+
+
+        }
+        div{
+            background-color: azure;
+            font-size: 20px;
+         
+            text-align:  center;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="inputtext">Enter a text:</label>
+        <input type="text" id="inputtext">
+        <button onclick="consonants()">countbtn</button>
+    </div>
+    <form>
+    <h3>YORK ADMISSION</h3>
+    <table>
+        <tr>
+        <td><label for="">Name : </label></td>
+        <td><input id="name" type="text" placeholder="Enter the student name" required></td>
+    </tr>
+    <tr>
+        <td><label for="">Phone Number : </label></td>
+        <td><input id="name" type="text" placeholder="Enter the student name"required ></td>
+    </tr>
+    <tr>
+        <td><label for="">Admission id : </label></td>
+        <td><input id="name" type="text" placeholder="Enter the admission id"required></td></tr>
+        <tr>
+        <td><label for="">Date of admission : </label></td>
+        <td><input id="name" type="date" ></td></tr>
+    <tr>
+        <td><label for="" >Select a Department : </label></td>
+        <td>
+        <select>
+            <option aria-placeholder="selecta dep" >Select</option >
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>CSE</option>
+            <option>MECH</option>
+            <option>CIVIL</option>
+            <option>IT</option>
+        </select></td></tr>
+    <tr>
+        <td><label for="">College Hostel : </label></td>
+             <td><input type="radio">Yes </td>
+             <td><input type="radio">No </td>
+            </tr>
+    <tr>
+        <td><label for="" >First Graduate : </label></td>
+        <td><input type="checkbox" >First graduate </td>
+         <td><input type="checkbox">Non first graduate </td>
+
+    </tr> 
+ 
+    </table>
+    <button id="button">CONFIRM ADMISSION</button>      
+
+
+</form>
+</body>
+</html>

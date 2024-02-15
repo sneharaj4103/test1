@@ -1,0 +1,43 @@
+h1{
+    color: #FFFFFF;
+    background-color: #ffa07a;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+body{
+    background-color: #fffacd;
+    padding-left: 350px;
+    padding-right: 350px;
+
+}
+#Ebill{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #5f9ea0  ;
+    border-collapse: collapse;
+    width: 500px;
+    color: white;
+    text-align: center;
+}
+select{
+    width: 170px;
+}
+#bill,#quantity{
+    width: 169px;
+
+}
+table{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 2px solid #ddd;
+
+}
+td{
+    border: 2px solid #ddd;
+    padding: 8px;
+    width: fit-content;
+
+}
+div{
+    background-color: #770080;
+    font-weight: bold;
+}

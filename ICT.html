@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ict.css">
+    <title>Document</title>
+    <script src="ict.js"></script>
+</head>
+<body>
+    <center>
+    <h1>Welcome To ADI Online Shopping</h1>
+    <form>
+        <table  id="Ebill">
+            <tr><td>Customer Name</td>
+            <td><input type="text" id="custname" required onkeydown="return/[a-zA-z]/i.test(event.key)" placeholder="Enter Customer Name"></td></tr>
+            <tr><td>Mobile No</td>
+            <td><input type="text" id="mobileNumber" required placeholder="Enter Your MobileNo"></td></tr>
+            <tr><td>Email id</td>
+            <td><input type="email" id="email"required  placeholder="Enter Your Email"></td></tr>
+            <tr><td>Billing Address</td>
+            <td><input type="text" id="address "  placeholder="Enter Your Address"></td></tr>
+            <tr><td>Choose Product</td>
+            <td><select onclick="getproduct()" id="product">
+                <option value="tv">TV </option>
+                <option value="fridge">Fridge</option>
+                <option value="mobile">MOBILE</option>
+            </select></tr>
+            <tr><td>Enter Quantity</td>
+            <td><input type="number" id="quantity" min="1" max="50"></td></tr>
+            <tr><td>Payment Mode</td>
+                <td><select id="mode">
+                    <option>UPI </option>
+                    <option>CREDIT CARD</option>
+                    <option>DEPIT CARD</option>
+                    <option>COD</option>
+                </select></tr>
+            <tr><td>Bag Total</td>
+            <td><input type="number" id="bill" min="1" max="50"></td></tr>
+            <tr><td>Coupon Code</td>
+            <td><input type="text" id="coupon" placeholder="Enter Your Address"></td></tr>
+            <tr><td>Delivery Option</td>
+            <td><input type="radio" id="delivery">Express
+            <input type="radio">Standard</td></tr>
+            <tr><td colspan="2"><input type="checkbox"  required>I Agree All Terms And Condition </td> </tr>
+            <tr><td><button id="clear">clear</button></td>
+            <td><input type="text" id="term" placeholder="Amount Payable"></td></tr>
+            <tr><td colspan="2"><button  id="submit">SUBMIT</button></td>
+        </table>
+    </form>
+    <div id="result"></div>
+</center>
+</body>
+</html>
